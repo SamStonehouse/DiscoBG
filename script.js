@@ -4,11 +4,11 @@ $('document').ready(function() {
 		var g = (Math.floor(Math.random() * 256));
 		var b = (Math.floor(Math.random() * 256));
 
-		function setBG(r,g,b) {
+		var setBG = function(r,g,b) {
 			$('body').css('background-color', 'rgb(' + r + ', ' + g + ', ' + b + ')');
 		}
 
-		function changeColour(colour) {
+		var changeColour = function(colour) {
 			return (colour + Math.round(Math.random() * 3) - 1)%256;
 		}
 
